@@ -141,3 +141,5 @@ kisdetweaks.config.name.commandcompletionenabled=Command Completion Popup
 kisdetweaks.config.comment.commandcompletionenabled=Show the enhanced command suggestion popup in chat.
 kisdetweaks.config.name.infinitesavedhotbarsenabled=Expandable Saved Hotbars
 kisdetweaks.config.comment.infinitesavedhotbarsenabled=Show KisdeTweaks saved rows in the Creative Hotbar tab.
+kisdetweaks.config.name.litematicashulkerpickenabled=Litematica Shulker Pick
+kisdetweaks.config.comment.litematicashulkerpickenabled=Pick a carried shulker containing the requested schematic item when ordinary pick fails.
