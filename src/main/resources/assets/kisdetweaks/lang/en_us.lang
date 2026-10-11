@@ -131,3 +131,5 @@ kisdetweaks.label.list_type.blacklist=Black List
 kisdetweaks.label.list_type.none=None
 kisdetweaks.label.list_type.whitelist=White List
 kisdetweaks.title.screen.block_list_edit=Edit Entity List '%s'
+kisdetweaks.config.name.portalplacementsafety=Safe Portal Placement
+kisdetweaks.config.comment.portalplacementsafety=Prevents placing blocks beside the sides and top/bottom of nether portals.

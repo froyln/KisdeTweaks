@@ -33,6 +33,7 @@ public class Configs {
 
     //Generic and misc options goes here
     public static class Generic {
+        public static final HotkeyedBooleanConfig PORTAL_PLACEMENT_SAFETY = new HotkeyedBooleanConfig("portalPlacementSafety", true, "");
         public static final HotkeyedBooleanConfig ADDITIONAL_BLOCK_BREAKING_COOLDOWN = new HotkeyedBooleanConfig("additionalBlockBreakingCooldown", false,"");
         public static final IntegerConfig ADDITIONAL_DELAY = new IntegerConfig("additionalDelay", 2, 0, 20);
         public static final HotkeyedBooleanConfig AUTO_CLEAR_GHOST_BLOCK = new HotkeyedBooleanConfig("autoClearGhostBlock", false, "");
@@ -60,6 +61,7 @@ public class Configs {
         public static final BlackWhiteListConfig<Item> ITEM_DROP_LIST = new BlackWhiteListConfig<>("itemDropList", BlackWhiteList.itemNames((UsageRestriction.ListType.WHITELIST),ImmutableList.of(), ImmutableList.of("minecraft:stone")));
 
         public static final ImmutableList<ConfigOption<?>> OPTIONS = ImmutableList.of(
+                PORTAL_PLACEMENT_SAFETY,
                 ADDITIONAL_BLOCK_BREAKING_COOLDOWN,
                 ADDITIONAL_DELAY,
                 AUTO_CLEAR_GHOST_BLOCK,
@@ -84,6 +86,7 @@ public class Configs {
         );
 
         public static final List<Hotkey> OPTIONS_HOTKEY = ImmutableList.of(
+                PORTAL_PLACEMENT_SAFETY,
                 ADDITIONAL_BLOCK_BREAKING_COOLDOWN,
                 AUTO_CLEAR_GHOST_BLOCK,
                 AUTO_DROP_CONTAINER,
