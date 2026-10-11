@@ -6,6 +6,10 @@ import xyz.kisde.kisdetweaks.util.autoInventoryProcess.DropPlayerInventory;
 
 public class Callbacks {
     public static void init() {
+        Configs.Fixes.OPTIFINE_REDSTONE_COLORS.setValueChangeCallback((newValue, oldValue) -> {
+            net.minecraft.client.Minecraft mc = net.minecraft.client.Minecraft.getMinecraft();
+            if (mc.renderGlobal != null) mc.renderGlobal.loadRenderers();
+        });
         Hotkeys.OPEN_CONFIG_GUI.createCallbackForAction(Actions.OPEN_CONFIG_GUI);
         Hotkeys.CLEAR_PISTORDER.createCallbackForAction(Actions.CLEAR_PISTORDER);
         Hotkeys.CLEAR_GHOST_BLOCK.createCallbackForAction(Actions.CLEAR_GHOST_BLOCK);

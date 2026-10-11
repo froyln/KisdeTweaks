@@ -6,6 +6,7 @@
   "minVersion": "0.7",
   "mixins": [
     "Fixes.MixinInputDispatcher",
+    "Fixes.MixinBlockRedstoneWire",
     "Accessors.BlockAccessor",
     "Accessors.BlocksAccessor",
     "Accessors.EntityAccessor",

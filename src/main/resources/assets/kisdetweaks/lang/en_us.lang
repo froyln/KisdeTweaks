@@ -159,3 +159,6 @@ kisdetweaks.config.comment.soundcontrollermenu=Open the searchable list of regis
 kisdetweaks.config.tab.fixes=Fixes
 kisdetweaks.config.name.hotbarhotkeysfix=Hotbar Hotkeys Fix
 kisdetweaks.config.comment.hotbarhotkeysfix=Prioritize bound hotbar keys while hovering an inventory item, before conflicting mod hotkeys. Disable to restore other mods' handling.
+
+kisdetweaks.config.name.optifineredstonecolors=OptiFine Redstone Colors
+kisdetweaks.config.comment.optifineredstonecolors=Use the active resource pack's 16x1 OptiFine/MCPatcher redstone palette for dust and its particles. Other OptiFine features are not included.

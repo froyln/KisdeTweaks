@@ -128,7 +128,8 @@ public class Configs {
 
     public static class Fixes {
         public static final BooleanConfig HOTBAR_HOTKEYS_FIX = new BooleanConfig("hotbarHotkeysFix", true);
-        public static final ImmutableList<ConfigOption<?>> OPTIONS = ImmutableList.of(HOTBAR_HOTKEYS_FIX);
+        public static final BooleanConfig OPTIFINE_REDSTONE_COLORS = new BooleanConfig("optifineRedstoneColors", true);
+        public static final ImmutableList<ConfigOption<?>> OPTIONS = ImmutableList.of(HOTBAR_HOTKEYS_FIX, OPTIFINE_REDSTONE_COLORS);
     }
 
     public static final int CURRENT_VERSION = 1;

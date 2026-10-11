@@ -29,6 +29,8 @@ public class InitHandler implements InitializationHandler {
      */
     @Override
     public void registerModHandlers() {
+        ((net.minecraft.client.resources.IReloadableResourceManager) net.minecraft.client.Minecraft.getMinecraft().getResourceManager())
+                .registerReloadListener(new xyz.kisde.kisdetweaks.util.RedstoneColors());
         //cfgs
         Registry.CONFIG_MANAGER.registerConfigHandler(new JsonModConfig(Reference.MOD_INFO, Configs.CURRENT_VERSION, Configs.CATEGORIES));
 
