@@ -53,9 +53,9 @@ configFile.withReader {
     project.ext.config = new ConfigSlurper().parse prop
 }
 
-group = 'xyz.crazyh'
+group = 'xyz.kisde'
 version = project.mod_version
-archivesBaseName = 'LiteTweaker'
+archivesBaseName = 'KisdeTweaks'
 
 minecraft {
     version = project.mcVersion

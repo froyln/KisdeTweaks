@@ -1,7 +1,7 @@
 {
-    "name": "litetweaker",
+    "name": "kisdetweaks",
     "mcversion": "1.12.2",
     "mixinConfigs": [
-        "mixins.litetweaker.json"
+        "mixins.kisdetweaks.json"
     ]
 }

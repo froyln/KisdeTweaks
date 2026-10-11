@@ -1,13 +1,13 @@
 [
   {
-    "modid": "litetweaker",
-    "name": "LiteTweaker",
+    "modid": "kisdetweaks",
+    "name": "KisdeTweaks",
     "description": "Adds another bunch of configurable client-side tweaks",
     "version": "${mod_version}",
     "mcversion": "${minecraft_version}",
     "url": "",
     "updateUrl": "",
-    "authorList": [ "Crazy_H" ],
+    "authorList": [ "Kisde" ],
     "credits": "masa",
     "logoFile": "",
     "screenshots": [],

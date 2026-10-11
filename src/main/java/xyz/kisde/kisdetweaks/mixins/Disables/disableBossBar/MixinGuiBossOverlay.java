@@ -1,0 +1,22 @@
+package xyz.kisde.kisdetweaks.mixins.Disables.disableBossBar;
+
+import net.minecraft.client.gui.GuiBossOverlay;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import xyz.kisde.kisdetweaks.config.DisableToggle;
+
+@Mixin(GuiBossOverlay.class)
+public abstract class MixinGuiBossOverlay {
+    @Inject(
+            method = "renderBossHealth",
+            at = @At("HEAD"),
+            cancellable = true
+    )
+    private void dontRender(CallbackInfo ci) {
+        if (DisableToggle.DISABLE_BOSS_BAR.getBooleanValue()) {
+            ci.cancel();
+        }
+    }
+}

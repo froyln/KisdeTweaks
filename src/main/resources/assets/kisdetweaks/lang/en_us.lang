@@ -1,0 +1,133 @@
+kisdetweaks.title.screen.configs=KisdeTweaks %s - Configs
+
+kisdetweaks.config.tab.generic=Generic
+kisdetweaks.config.tab.hotkeys=Hotkeys
+kisdetweaks.config.tab.tweaks=Tweaks
+kisdetweaks.config.tab.disables=Disables
+
+kisdetweaks.hotkeys.category.generic=Generic
+kisdetweaks.hotkeys.category.generic_hotkeys=Hotkeys
+kisdetweaks.hotkeys.category.tweak_toggle_hotkeys=Tweak Hotkeys
+kisdetweaks.hotkeys.category.disable_toggle_hotkeys=Disable Hotkeys
+
+kisdetweaks.config.name.additionalblockbreakingcooldown=Additional Block Breaking Cooldown
+kisdetweaks.config.name.additionaldelay=Additional Block Breaking Cooldown Time
+kisdetweaks.config.name.autoclearghostblock=Auto Clear Ghost Block
+kisdetweaks.config.name.autoclearghostblockinterval=Auto Clear Ghost Block Interval
+kisdetweaks.config.name.autodropcontainer=Auto Drop Container
+kisdetweaks.config.name.autodropcontainertype=Auto Drop Container Type
+kisdetweaks.config.name.autofillcontainer=Auto Fill Container
+kisdetweaks.config.name.autofillcontainerlimit=Auto Fill Container Limit
+kisdetweaks.config.name.autorefreshinventory=Auto Refresh Inventory
+kisdetweaks.config.name.autorefreshinventoryinterval=Auto Refresh Inventory Interval
+kisdetweaks.config.name.backgroundfpslimit=Background FPS Limit
+kisdetweaks.config.name.customtitle=Custom Title
+kisdetweaks.config.name.clienttime=Client Time
+kisdetweaks.config.name.perimeterwalllist=Perimeter Wall List
+kisdetweaks.config.name.blockhitlist=Block Hit List
+kisdetweaks.config.name.entityhitlist=Entity Hit List
+
+kisdetweaks.config.comment.additionalblockbreakingcooldown=Add a configurable amount of delay between two instant mined block.\nUseful when building redstone machines or your mouse is douvle clicking
+kisdetweaks.config.comment.additionaldelay=The amount of dalay add between mining two blocks, in gametick.
+kisdetweaks.config.comment.autoclearghostblock=Automatically clear ghost blocks for you.\nNote some server may kick you because this send a lot packet in 1gt.
+kisdetweaks.config.comment.autoclearghostblockinterval=Interval between auto clearing ghost blocks, in gametick.
+kisdetweaks.config.comment.autodropcontainer=Drop all the content in the container you clicked.
+kisdetweaks.config.comment.autodropcontainertype=Change which type of container you want to drop, useful when using crafting station.
+kisdetweaks.config.comment.autofillcontainer=Fill the container with content above the limit in your inventory.
+kisdetweaks.config.comment.autofillcontainerlimit=Only fill item stacks above this limit.
+kisdetweaks.config.comment.autorefreshinventory=Automatically refresh you inventory.\nUseful when inventory changed quickly and out of sync with server.
+kisdetweaks.config.comment.autorefreshinventoryinterval=Inventory between auto refresh inventory, in gametick.
+kisdetweaks.config.comment.backgroundfpslimit=Limit the game fps when not focused, saves some CPU and GPU usage.
+kisdetweaks.config.comment.customtitle=Change the game title to whatever you want.
+kisdetweaks.config.comment.clienttime=The client time you want to override, in gametick.
+kisdetweaks.config.comment.perimeterwalllist=Block blacklist that get checked on the highest y value.
+kisdetweaks.config.comment.blockhitlist=Block list that you want to black/white list.
+kisdetweaks.config.comment.entityhitlist=Entity list that you want to black list, now it uses class name.
+
+kisdetweaks.feature_toggle.name.autofish=Auto Fish
+kisdetweaks.feature_toggle.name.autorespawn=Auto Respawn
+kisdetweaks.feature_toggle.name.betterf3ncycle=Better F3+N Cycle
+kisdetweaks.feature_toggle.name.creativenoclip=Creative No Clip
+kisdetweaks.feature_toggle.name.placeignoreentity=Place Ignore Entity
+kisdetweaks.feature_toggle.name.stepup=Step Up
+kisdetweaks.feature_toggle.name.clienttimeoverride=Client Time Override
+kisdetweaks.feature_toggle.name.nofall=No Fall
+kisdetweaks.feature_toggle.name.anvilrenamecopy=Anvil Name Copy
+kisdetweaks.feature_toggle.name.perimeterwallhelper=Perimeter Wall Helper
+kisdetweaks.feature_toggle.name.preventdigblocksbelow=Prevent Dig Blocks Below
+kisdetweaks.feature_toggle.name.fakenightvision=Fake Night Vision
+kisdetweaks.feature_toggle.name.miningghostblockfix=Mining Ghost Block Fix
+kisdetweaks.feature_toggle.name.alwaysrenderbarrierparticles=Always Render Barrier Particles
+kisdetweaks.feature_toggle.name.alwaysrenderbarriermodel=Always Render Barrier Model
+kisdetweaks.feature_toggle.name.alwaysrenderstructurevoidmodel=Always Render Structure Void Model
+kisdetweaks.feature_toggle.name.quickblockswap=Quick Block Swapper
+
+kisdetweaks.feature_toggle.comment.autofish=Automatically retract fish rod when about to catch a fish.\nStop auto re-use fish rod by switching to other item.\nThis might not work at high ping server.
+kisdetweaks.feature_toggle.comment.autorespawn=Auto respawn when player dies and close the respawn screen.
+kisdetweaks.feature_toggle.comment.betterf3ncycle=Now it works like 1.15, which you can directly switch to creative in non spectator mode.
+kisdetweaks.feature_toggle.comment.creativenoclip=Allows you to phase through wall when in creative flying.\nThis only works on single player, or need server side support to work.
+kisdetweaks.feature_toggle.comment.placeignoreentity=Allows you to place block inside of entity when in creative.
+kisdetweaks.feature_toggle.comment.stepup=Allows you to walk up one height blocks(0.6->1.125).
+kisdetweaks.feature_toggle.comment.clienttimeoverride=Change the client time to whatever you want.
+kisdetweaks.feature_toggle.comment.nofall=You won't take fall damage.
+kisdetweaks.feature_toggle.comment.anvilrenamecopy=If you turn this on item in the anvil will automatically renamed to text from your clipboard.
+kisdetweaks.feature_toggle.comment.perimeterwallhelper=This prevents you digging blocks that has blacklisted block on the top.\nUseful when digging non-regular shape pit.
+kisdetweaks.feature_toggle.comment.preventdigblocksbelow=Prevents you digging blocks below you.\nUseful when digging. Sneak to override.
+kisdetweaks.feature_toggle.comment.fakenightvision=basically gives you night vision potion effect.\nNote this is different then GammaOverride.
+kisdetweaks.feature_toggle.comment.miningghostblockfix=Send one more right click packet after you mine block.
+kisdetweaks.feature_toggle.comment.alwaysrenderbarrierparticles=Render barrier particles as in creative holding barrier item.
+kisdetweaks.feature_toggle.comment.alwaysrenderbarriermodel=Render barrier block texture.
+kisdetweaks.feature_toggle.comment.alwaysrenderstructurevoidmodel=Render structure void texture.
+kisdetweaks.feature_toggle.comment.quickblockswap=Enable this will let you place and break block in same gt, only works in creative.
+
+kisdetweaks.disable_toggle.name.disableblockbreakingcooldown=Disable Block Breaking Cooldown
+kisdetweaks.disable_toggle.name.disableslimebounce=Disable Slime Block Bounce
+kisdetweaks.disable_toggle.name.disableslowdown=Disable Slow Down
+kisdetweaks.disable_toggle.name.disablepumpkinoverlay=Disable Pumpkin Overlay
+kisdetweaks.disable_toggle.name.disablevignetting=Disable Vignetting
+kisdetweaks.disable_toggle.name.disablewaterfov=Disable In-Water Fov Change
+kisdetweaks.disable_toggle.name.disablebeaconbeam=Disable Beacon Beam
+kisdetweaks.disable_toggle.name.disableblockhit=Disable Block Hit
+kisdetweaks.disable_toggle.name.disableentityhit=Disable Entity Hit
+kisdetweaks.disable_toggle.name.disablecommandblockoutputtoconsole=Disable Command Block Console Spam
+kisdetweaks.disable_toggle.name.disablerealmbutton=Disable Realm Button
+
+kisdetweaks.disable_toggle.comment.disableblockbreakingcooldown=Removes the cool down between mining two non-instant mined block.
+kisdetweaks.disable_toggle.comment.disableslimebounce=Slime block acts like normal block, won't bounce player when jumping.\nWorks better with DisableSlimeSlowDown.
+kisdetweaks.disable_toggle.comment.disableslowdown=Player won't be slowed down by cobweb, soulsand and using item.
+kisdetweaks.disable_toggle.comment.disablepumpkinoverlay=Removes the texture when wearing pumpkin in helmet slot.
+kisdetweaks.disable_toggle.comment.disablevignetting=Removes the annoying dimming effect when light level is low.\normally when you in noclip and your head is in non-translucent block.
+kisdetweaks.disable_toggle.comment.disablewaterfov=Disables the fov change when your head is in water.
+kisdetweaks.disable_toggle.comment.disablebeaconbeam=Disables beacon beam from rendering.
+kisdetweaks.disable_toggle.comment.disableblockhit=This prevents you from both left click and right click the blocks that's in the list.
+kisdetweaks.disable_toggle.comment.disableentityhit=This prevents you from hitting entities that's in the list.
+kisdetweaks.disable_toggle.comment.disablecommandblockoutputtoconsole=Disable command block output to console regardless of gamerule logAdminCommands and CommandBlockOutPut.
+kisdetweaks.disable_toggle.comment.disablerealmbutton=Remove the annoying realm button on the main menu.
+
+kisdetweaks.hotkey.name.clearghostblock=Clear Ghost Block (Left Click)
+kisdetweaks.hotkey.name.clearghostblockrightclick=Clear Ghost Block (Right Click)
+kisdetweaks.hotkey.name.openconfiggui=Open Config Gui
+kisdetweaks.hotkey.name.refreshinventory=Refresh Inventory
+kisdetweaks.hotkey.name.togglemainhand=Toggle Main Hand
+kisdetweaks.hotkey.name.swapblock=Swap Block
+
+kisdetweaks.hotkey.comment.clearghostblock=Press to manually clear ghost block once.\nNote: this doesn't clear piston ghost block.
+kisdetweaks.hotkey.comment.clearghostblockrightclick=Press to manually clear ghost block once.\nNote: this will swap you hand item first, then right click all blocks. If server is lagging it might place a lot of blocks. Use with caution.
+kisdetweaks.hotkey.comment.openconfiggui=Press to open config screen.
+kisdetweaks.hotkey.comment.refreshinventory=Press to manually refresh your inventory by forcing server to resend your inv.
+kisdetweaks.hotkey.comment.togglemainhand=Press to switch your main hand
+kisdetweaks.hotkey.comment.swapblock=Press to attack and use in same gt, mainly use to swap block, only works in creative.
+
+kisdetweaks.message.refresh_inventory=Refreshing inventory
+kisdetweaks.message.clear_ghost_block=Clearing ghost blocks
+kisdetweaks.message.catch_fish=You just catch a fish! or whatever it is?
+kisdetweaks.message.fill_container=Filled %s with %s item(s)
+kisdetweaks.message.fill_container_failed=Nothing filled
+
+kisdetweaks.label.auto_drop_container_type.shulker=Shulker Box Only
+kisdetweaks.label.auto_drop_container_type.all=All Valid Container
+
+kisdetweaks.label.list_type.blacklist=Black List
+kisdetweaks.label.list_type.none=None
+kisdetweaks.label.list_type.whitelist=White List
+kisdetweaks.title.screen.block_list_edit=Edit Entity List '%s'
