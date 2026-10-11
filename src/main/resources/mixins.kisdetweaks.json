@@ -5,9 +5,11 @@
   "refmap": "mixins.kisdetweaks.refmap.json",
   "minVersion": "0.7",
   "mixins": [
+    "Fixes.MixinInputDispatcher",
     "Accessors.BlockAccessor",
     "Accessors.BlocksAccessor",
     "Accessors.EntityAccessor",
+    "Accessors.GuiContainerAccessor",
     "Accessors.MinecraftAccessor",
     "Accessors.SoundHandlerAccessor",
     "Disables.disableArmorStandRendering.MixinRenderArmorStand",

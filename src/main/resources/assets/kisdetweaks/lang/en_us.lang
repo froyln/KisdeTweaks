@@ -154,3 +154,8 @@ kisdetweaks.config.name.soundcontrollerenabled=Per-Sound Volume Rules
 kisdetweaks.config.comment.soundcontrollerenabled=Apply per-sound volume levels.
 kisdetweaks.config.name.soundcontrollermenu=Sound Volume Menu
 kisdetweaks.config.comment.soundcontrollermenu=Open the searchable list of registered sounds and adjust each volume.
+
+
+kisdetweaks.config.tab.fixes=Fixes
+kisdetweaks.config.name.hotbarhotkeysfix=Hotbar Hotkeys Fix
+kisdetweaks.config.comment.hotbarhotkeysfix=Prioritize bound hotbar keys while hovering an inventory item, before conflicting mod hotkeys. Disable to restore other mods' handling.

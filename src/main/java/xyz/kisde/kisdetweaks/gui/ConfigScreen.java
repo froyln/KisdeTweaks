@@ -23,12 +23,14 @@ public class ConfigScreen {
     public static final ModInfo MOD_INFO = Reference.MOD_INFO;
 
     private static final BaseConfigTab GENERIC = new BaseConfigTab(MOD_INFO, "generic", 160, getGenericConfigs(), ConfigScreen::create);
+    private static final BaseConfigTab FIXES = new BaseConfigTab(MOD_INFO, "fixes", 200, Configs.Fixes.OPTIONS, ConfigScreen::create);
     private static final BaseConfigTab TWEAKS = new BaseConfigTab(MOD_INFO, "tweaks", 200, TweaksToggle.VALUES, ConfigScreen::create);
     private static final BaseConfigTab DISABLES = new BaseConfigTab(MOD_INFO, "disables", 200, DisableToggle.VALUES, ConfigScreen::create);
     private static final BaseConfigTab HOTKEYS =  new BaseConfigTab(MOD_INFO, "hotkeys", 160, getHotKeys(), ConfigScreen::create);
 
     private static final ImmutableList<ConfigTab> CONFIG_TABS = ImmutableList.of(
             GENERIC,
+            FIXES,
             TWEAKS,
             DISABLES,
             HOTKEYS
@@ -36,6 +38,7 @@ public class ConfigScreen {
 
     private static final ImmutableList<ScreenTab> ALL_TABS = ImmutableList.of(
             GENERIC,
+            FIXES,
             TWEAKS,
             DISABLES,
             HOTKEYS

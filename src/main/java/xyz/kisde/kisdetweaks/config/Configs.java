@@ -126,10 +126,16 @@ public class Configs {
         );
     }
 
+    public static class Fixes {
+        public static final BooleanConfig HOTBAR_HOTKEYS_FIX = new BooleanConfig("hotbarHotkeysFix", true);
+        public static final ImmutableList<ConfigOption<?>> OPTIONS = ImmutableList.of(HOTBAR_HOTKEYS_FIX);
+    }
+
     public static final int CURRENT_VERSION = 1;
 
     public static final List<ConfigOptionCategory> CATEGORIES = ImmutableList.of(
             BaseConfigOptionCategory.normal(Reference.MOD_INFO, "Generic", Generic.OPTIONS),
+            BaseConfigOptionCategory.normal(Reference.MOD_INFO, "Fixes", Fixes.OPTIONS),
             BaseConfigOptionCategory.normal(Reference.MOD_INFO, "Tweaks", TweaksToggle.TOGGLE_CONFIGS),
             BaseConfigOptionCategory.normal(Reference.MOD_INFO, "TweakHotkeys", TweaksToggle.TOGGLE_HOTKEYS),
             BaseConfigOptionCategory.normal(Reference.MOD_INFO, "Disables", DisableToggle.TOGGLE_CONFIGS),
