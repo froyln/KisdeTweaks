@@ -16,6 +16,7 @@
 - **Better Books:** adds a visible caret, arrow navigation, Shift+Arrow selection, Ctrl+Left/Right word navigation, Home/End, Delete, and selection-aware copy/cut/paste. Click text to place the caret; Shift+Click extends selection. Editing keeps vanilla page limits and signing behavior.
 - **Command completion:** command suggestions open automatically while typing a command. Arrow keys navigate suggestions; history navigation remains available outside suggestion selection.
 - **Fake Night Vision:** rendering-only brightness avoids advertising nonexistent potion effects to VoxelMap and other potion consumers.
+- **Durability viewer:** opt-in HUD shows durability for the held items and armor, color-coded by remaining durability, and the number of empty main-inventory slots. Nearly new tools show damage taken instead of a large remaining-durability value.
 
 Every standalone feature above has an enable toggle in the KisdeTweaks MaLiLib config menu. The inherited LiteTweaker features retain their existing individual toggles.
 

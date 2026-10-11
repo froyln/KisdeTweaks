@@ -51,6 +51,7 @@
     "Tweaks.clientTimeOverride.MixinWorldInfo",
     "Tweaks.creativeNoClip.MixinEntityPlayer",
     "Tweaks.creativeNoClip.MixinEntityRenderer",
+    "Tweaks.durabilityViewer.MixinGuiIngame",
     "Tweaks.calc.MixinGuiChat",
     "Tweaks.commandCompletion.MixinGuiChat",
     "Tweaks.entityCulling.MixinRenderItemFrame",

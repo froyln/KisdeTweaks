@@ -29,6 +29,7 @@ public enum TweaksToggle implements ConfigInfo {
     CLIENT_TIME_OVERRIDE("clientTimeOverride", false),
     //TODO CREATIVE_FLY_NO_DRAG("creativeFlyNoDrag", false),
     CREATIVE_NO_CLIP("creativeNoClip", false),
+    DURABILITY_VIEWER("durabilityViewer", false),
     ENTITY_CULLING("entityCulling",false),
     FAKE_NIGHT_VISION("fakeNightVision", false),
     FAST_CHEST("fastChest", false),
