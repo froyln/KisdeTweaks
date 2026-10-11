@@ -134,6 +134,10 @@ kisdetweaks.title.screen.block_list_edit=Edit Entity List '%s'
 kisdetweaks.config.name.portalplacementsafety=Safe Portal Placement
 kisdetweaks.config.comment.portalplacementsafety=Prevents placing blocks beside the sides and top/bottom of nether portals.
 
+kisdetweaks.config.name.entityrenderdisabler=Entity Render Disabler
+kisdetweaks.config.comment.entityrenderdisabler=Enables hiding selected entity types during rendering.
+kisdetweaks.config.name.hiddenentities=Hidden Entity Types
+kisdetweaks.config.comment.hiddenentities=Entity types hidden while Entity Render Disabler is enabled.
 
 kisdetweaks.config.name.calculatorenabled=Local /calc Command
 kisdetweaks.config.comment.calculatorenabled=Evaluate /calc expressions locally without sending them to a server.

@@ -50,6 +50,7 @@
     "Tweaks.calc.MixinGuiChat",
     "Tweaks.commandCompletion.MixinGuiChat",
     "Tweaks.entityCulling.MixinRenderItemFrame",
+    "Tweaks.entityRenderDisabler.MixinRenderManager",
     "Tweaks.infiniteHotbars.MixinGuiContainerCreative",
     "Tweaks.litematicaShulkerPick.MixinLitematicaInventoryUtils",
     "Tweaks.fastChest.BlockChestMixin",

@@ -40,6 +40,8 @@ public class Configs {
         public static final HotkeyedBooleanConfig LITEMATICA_SHULKER_PICK_ENABLED = new HotkeyedBooleanConfig("litematicaShulkerPickEnabled", true, "");
         public static final HotkeyedBooleanConfig PISTORDER_ENABLED = new HotkeyedBooleanConfig("pistorderEnabled", true, "");
         public static final HotkeyedBooleanConfig SOUND_CONTROLLER_ENABLED = new HotkeyedBooleanConfig("soundControllerEnabled", true, "");
+        public static final HotkeyedBooleanConfig ENTITY_RENDER_DISABLER = new HotkeyedBooleanConfig("entityRenderDisabler", false, "");
+        public static final EntityListConfig HIDDEN_ENTITIES = EntityListConfig.create("hiddenEntities", ImmutableList.<Class<? extends Entity>>of());
         public static final HotkeyedBooleanConfig PORTAL_PLACEMENT_SAFETY = new HotkeyedBooleanConfig("portalPlacementSafety", true, "");
         public static final StringListConfig SOUND_GAINS = new StringListConfig("soundGains", ImmutableList.of());
         public static final GenericButtonConfig SOUND_CONTROLLER_MENU = new GenericButtonConfig(
@@ -80,6 +82,8 @@ public class Configs {
                 LITEMATICA_SHULKER_PICK_ENABLED,
                 PISTORDER_ENABLED,
                 SOUND_CONTROLLER_ENABLED,
+                ENTITY_RENDER_DISABLER,
+                HIDDEN_ENTITIES,
                 PORTAL_PLACEMENT_SAFETY,
                 SOUND_GAINS,
                 ADDITIONAL_BLOCK_BREAKING_COOLDOWN,
@@ -112,6 +116,7 @@ public class Configs {
                 LITEMATICA_SHULKER_PICK_ENABLED,
                 PISTORDER_ENABLED,
                 SOUND_CONTROLLER_ENABLED,
+                ENTITY_RENDER_DISABLER,
                 PORTAL_PLACEMENT_SAFETY,
                 ADDITIONAL_BLOCK_BREAKING_COOLDOWN,
                 AUTO_CLEAR_GHOST_BLOCK,
