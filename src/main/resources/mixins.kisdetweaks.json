@@ -48,6 +48,7 @@
     "Tweaks.creativeNoClip.MixinEntityPlayer",
     "Tweaks.creativeNoClip.MixinEntityRenderer",
     "Tweaks.calc.MixinGuiChat",
+    "Tweaks.commandCompletion.MixinGuiChat",
     "Tweaks.entityCulling.MixinRenderItemFrame",
     "Tweaks.fastChest.BlockChestMixin",
     "Tweaks.fastChest.BlockEnderChestMixin",

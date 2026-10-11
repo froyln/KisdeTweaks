@@ -34,6 +34,7 @@ public class Configs {
     //Generic and misc options goes here
     public static class Generic {
         public static final HotkeyedBooleanConfig CALCULATOR_ENABLED = new HotkeyedBooleanConfig("calculatorEnabled", true, "");
+        public static final HotkeyedBooleanConfig COMMAND_COMPLETION_ENABLED = new HotkeyedBooleanConfig("commandCompletionEnabled", true, "");
         public static final HotkeyedBooleanConfig PORTAL_PLACEMENT_SAFETY = new HotkeyedBooleanConfig("portalPlacementSafety", true, "");
         public static final HotkeyedBooleanConfig ADDITIONAL_BLOCK_BREAKING_COOLDOWN = new HotkeyedBooleanConfig("additionalBlockBreakingCooldown", false,"");
         public static final IntegerConfig ADDITIONAL_DELAY = new IntegerConfig("additionalDelay", 2, 0, 20);
@@ -63,6 +64,7 @@ public class Configs {
 
         public static final ImmutableList<ConfigOption<?>> OPTIONS = ImmutableList.of(
                 CALCULATOR_ENABLED,
+                COMMAND_COMPLETION_ENABLED,
                 PORTAL_PLACEMENT_SAFETY,
                 ADDITIONAL_BLOCK_BREAKING_COOLDOWN,
                 ADDITIONAL_DELAY,
@@ -89,6 +91,7 @@ public class Configs {
 
         public static final List<Hotkey> OPTIONS_HOTKEY = ImmutableList.of(
                 CALCULATOR_ENABLED,
+                COMMAND_COMPLETION_ENABLED,
                 PORTAL_PLACEMENT_SAFETY,
                 ADDITIONAL_BLOCK_BREAKING_COOLDOWN,
                 AUTO_CLEAR_GHOST_BLOCK,

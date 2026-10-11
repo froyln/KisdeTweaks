@@ -137,3 +137,5 @@ kisdetweaks.config.comment.portalplacementsafety=Prevents placing blocks beside 
 
 kisdetweaks.config.name.calculatorenabled=Local /calc Command
 kisdetweaks.config.comment.calculatorenabled=Evaluate /calc expressions locally without sending them to a server.
+kisdetweaks.config.name.commandcompletionenabled=Command Completion Popup
+kisdetweaks.config.comment.commandcompletionenabled=Show the enhanced command suggestion popup in chat.
