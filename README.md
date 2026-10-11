@@ -1,36 +1,45 @@
-# LiteTweaker
+<div align="center">
 
-This is a client-side tweak mod that adds some useful features<sup>*1</sup> to 1.12 client.
+# KisdeTweaks
 
-Press `END` to open congif menu, or open it on liteloader side bar, or drag down menu on the top right of any mod using new malilib(masa <3).
+**A client-side collection of configurable gameplay and interface tweaks for Minecraft Java 1.12.2 on LiteLoader.**
 
-**This mod requires [malilib](https://github.com/maruohon/malilib) >= 0.52.0** and loads on [LiteLoader](http://www.liteloader.com/).
-
-~~[Feature List](https://github.com/CrazyHPi/LiteTweaker/blob/master/docs/Features.md), not finished yet.~~
-
-Dev build: [check here](https://github.com/CrazyHPi/LiteTweaker/actions), these builds are made with bugs and love.
+</div>
 
 ---
 
-Inspired by:
+## What is it?
 
-[TweakerMore](https://github.com/Fallen-Breath/tweakermore) A collection of client-side tweak kits to enhance your Minecraft game experience. Tweak Minecraft and beyond!
+KisdeTweaks extends the LiteTweaker 1.12.2 project and uses MaLiLib for configuration and hotkeys. It is under active development; features are being ported and added in stages.
 
-[Cuteless Mod](https://github.com/Nessiesson/CutelessMod) Hyperdope mod by nessie and robitobi. Very cute.
+## Documentation
 
-[MasaAdditions](https://github.com/hp3721/masaadditions) An add-on mod for Masa's mods, Tweakeroo, MiniHUD, and Litematica.
+**[Project documentation](docs/README.md)**
 
----
+## Features
 
-## Build
+- Inherited LiteTweaker 1.12.2 tweaks.
+- Optional protection against placing blocks beside Nether Portal sides.
+- Optional entity render suppression by entity type.
+- Local arithmetic `/calc` command and automatic command suggestions.
+- Expandable saved hotbars and optional Litematica shulker picking.
+- Piston previews, searchable sound volume controls, and enhanced book editing.
+- Inventory hotkey fixes and resource-pack redstone colors.
 
-* Clone the repo.
-* Add malilib 0.51.0 as dependency (using local dependency<sup>*2</sup> or check [this](https://discord.com/channels/169369095538606080/913891227802427402/952894138502750259)).
-* Run `gradlew build` at repo directory.
-* Complied `.litemod` file will be in build/libs/.
+## Requirements
 
-### Notes
+- Minecraft Java Edition 1.12.2
+- LiteLoader for 1.12.2
+- MaLiLib compatible with the LiteLoader 1.12.2 API
 
-*1: **Some features might consider cheating depend on the server you are playing on**, while some are just for fun. Thoungh most feature should be pretty useful.
+## Installation
 
-*2: [masa&#39;s maven server](https://masa.dy.fi/maven/fi/dy/masa/malilib/malilib-liteloader-1.12.2/) where you can get malilib builds or you can build from source.
+No release artifact is available yet.
+
+## Building from Source
+
+Use a JDK compatible with the legacy Minecraft build tooling, then run `bash gradlew clean build`. LiteLoader artifacts are generated under `build/libs/`.
+
+## License
+
+KisdeTweaks is based on LiteTweaker, licensed under GNU LGPL version 3. See [LICENSE](LICENSE) and preserve the upstream copyright notices.
