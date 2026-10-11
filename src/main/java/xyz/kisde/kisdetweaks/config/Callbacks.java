@@ -7,6 +7,7 @@ import xyz.kisde.kisdetweaks.util.autoInventoryProcess.DropPlayerInventory;
 public class Callbacks {
     public static void init() {
         Hotkeys.OPEN_CONFIG_GUI.createCallbackForAction(Actions.OPEN_CONFIG_GUI);
+        Hotkeys.CLEAR_PISTORDER.createCallbackForAction(Actions.CLEAR_PISTORDER);
         Hotkeys.CLEAR_GHOST_BLOCK.createCallbackForAction(Actions.CLEAR_GHOST_BLOCK);
         Hotkeys.REFRESH_INVENTORY.createCallbackForAction(Actions.REFRESH_INVENTORY);
         Hotkeys.TOGGLE_MAIN_HAND.createCallbackForAction(Actions.TOGGLE_MAIN_HAND);

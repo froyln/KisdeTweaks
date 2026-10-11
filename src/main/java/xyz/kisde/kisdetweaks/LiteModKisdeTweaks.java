@@ -3,6 +3,7 @@ package xyz.kisde.kisdetweaks;
 import com.mojang.realmsclient.dto.RealmsServer;
 import com.mumfrey.liteloader.Configurable;
 import com.mumfrey.liteloader.JoinGameListener;
+import com.mumfrey.liteloader.PostRenderListener;
 import com.mumfrey.liteloader.LiteMod;
 import com.mumfrey.liteloader.Tickable;
 import com.mumfrey.liteloader.modconfig.ConfigPanel;
@@ -21,7 +22,7 @@ import xyz.kisde.kisdetweaks.util.autoInventoryProcess.DropPlayerInventory;
 
 import java.io.File;
 
-public class LiteModKisdeTweaks implements LiteMod, Configurable, Tickable, JoinGameListener {
+public class LiteModKisdeTweaks implements LiteMod, Configurable, Tickable, JoinGameListener, PostRenderListener {
     public static final Logger LOGGER = LogManager.getLogger(Reference.MOD_NAME);
 
     /**
@@ -108,4 +109,6 @@ public class LiteModKisdeTweaks implements LiteMod, Configurable, Tickable, Join
         RawInput.getMouse();
     }
 
+    @Override public void onPostRenderEntities(float partialTicks) { }
+    @Override public void onPostRender(float partialTicks) { PistonPreview.render(partialTicks); }
 }

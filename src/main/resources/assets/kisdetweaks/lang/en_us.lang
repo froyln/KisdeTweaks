@@ -143,3 +143,6 @@ kisdetweaks.config.name.infinitesavedhotbarsenabled=Expandable Saved Hotbars
 kisdetweaks.config.comment.infinitesavedhotbarsenabled=Show KisdeTweaks saved rows in the Creative Hotbar tab.
 kisdetweaks.config.name.litematicashulkerpickenabled=Litematica Shulker Pick
 kisdetweaks.config.comment.litematicashulkerpickenabled=Pick a carried shulker containing the requested schematic item when ordinary pick fails.
+kisdetweaks.config.name.pistorderenabled=Pistorder Preview
+kisdetweaks.config.comment.pistorderenabled=Show piston movement previews on empty-hand right-click.
+kisdetweaks.hotkeys.name.clearpistorder=Clear Pistorder Displays

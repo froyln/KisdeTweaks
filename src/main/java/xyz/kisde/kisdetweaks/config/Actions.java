@@ -10,10 +10,12 @@ import xyz.kisde.kisdetweaks.gui.ConfigScreen;
 import xyz.kisde.kisdetweaks.util.AntiGhostBlock;
 import xyz.kisde.kisdetweaks.util.RandomUtils;
 import xyz.kisde.kisdetweaks.util.RefreshInventory;
+import xyz.kisde.kisdetweaks.util.PistonPreview;
 import xyz.kisde.kisdetweaks.util.autoInventoryProcess.DropPlayerInventory;
 
 public class Actions {
     public static final NamedAction OPEN_CONFIG_GUI = register("openConfigScreen", ConfigScreen::open);
+    public static final NamedAction CLEAR_PISTORDER = register("clearPistorder", PistonPreview::clear);
     public static final NamedAction CLEAR_GHOST_BLOCK = register("clearGhostBlock", AntiGhostBlock::clearGBLeftWithMsg);
     public static final NamedAction CLEAR_GHOST_BLOCK_RC = register("clearGhostBlockRightClick", AntiGhostBlock::clearGBRightWithMsg);
     public static final NamedAction REFRESH_INVENTORY  = register("refreshInventory", RefreshInventory::refreshInv);

@@ -12,6 +12,7 @@ public class Hotkeys {
 
     public static final HotkeyConfig DROP_INVENTORY = new HotkeyConfig("dropInventory", "", KeyBindSettings.INGAME_MODIFIER);
     public static final HotkeyConfig OPEN_CONFIG_GUI = new HotkeyConfig("openConfigGui", "END");
+    public static final HotkeyConfig CLEAR_PISTORDER = new HotkeyConfig("clearPistorder", "P");
     public static final HotkeyConfig REFRESH_INVENTORY = new HotkeyConfig("refreshInventory", "", KeyBindSettings.INGAME_MODIFIER);
     public static final HotkeyConfig SWAP_BLOCK = new HotkeyConfig("swapBlock", "", KeyBindSettings.INGAME_MODIFIER);
     public static final HotkeyConfig TOGGLE_ELYTRA_FLYING = new HotkeyConfig("stopElytraFlying", "", KeyBindSettings.INGAME_MODIFIER);
@@ -22,6 +23,7 @@ public class Hotkeys {
             CLEAR_GHOST_BLOCK_RC,
             DROP_INVENTORY,
             OPEN_CONFIG_GUI,
+            CLEAR_PISTORDER,
             REFRESH_INVENTORY,
             SWAP_BLOCK,
             TOGGLE_ELYTRA_FLYING,
