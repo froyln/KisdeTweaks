@@ -63,6 +63,8 @@ public class ConfigScreen {
 
     private static ImmutableList<ConfigInfo> getGenericConfigs() {
         ArrayList<ConfigInfo> list = new ArrayList<>(Configs.Generic.OPTIONS);
+        list.remove(Configs.Generic.SOUND_GAINS);
+        list.add(Configs.Generic.SOUND_CONTROLLER_MENU);
 
         ConfigUtils.sortConfigsByDisplayName(list);
 

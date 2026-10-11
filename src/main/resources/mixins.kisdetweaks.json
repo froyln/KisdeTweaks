@@ -74,6 +74,7 @@
     "Tweaks.reducedBossBar.MixinGuiBossOverlay",
     "Tweaks.riseChatHistoryLimit.GuiNewChatMixin",
     "Tweaks.stepUp.MixinEntityPlayerSP",
+    "Tweaks.soundController.MixinSoundManager",
     "Tweaks.tabPingDisplay.MixinGuiPlayerTabOverlay"
   ]
 }

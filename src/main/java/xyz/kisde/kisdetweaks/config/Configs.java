@@ -24,6 +24,7 @@ import net.minecraft.item.ItemBlock;
 import xyz.kisde.kisdetweaks.Reference;
 import xyz.kisde.kisdetweaks.util.autoInventoryProcess.AutoDropContainerType;
 import xyz.kisde.kisdetweaks.config.option.EntityListConfig;
+import xyz.kisde.kisdetweaks.gui.SoundControllerScreen;
 import net.minecraft.client.Minecraft;
 
 import java.sql.Ref;
@@ -38,7 +39,14 @@ public class Configs {
         public static final HotkeyedBooleanConfig INFINITE_SAVED_HOTBARS_ENABLED = new HotkeyedBooleanConfig("infiniteSavedHotbarsEnabled", true, "");
         public static final HotkeyedBooleanConfig LITEMATICA_SHULKER_PICK_ENABLED = new HotkeyedBooleanConfig("litematicaShulkerPickEnabled", true, "");
         public static final HotkeyedBooleanConfig PISTORDER_ENABLED = new HotkeyedBooleanConfig("pistorderEnabled", true, "");
+        public static final HotkeyedBooleanConfig SOUND_CONTROLLER_ENABLED = new HotkeyedBooleanConfig("soundControllerEnabled", true, "");
         public static final HotkeyedBooleanConfig PORTAL_PLACEMENT_SAFETY = new HotkeyedBooleanConfig("portalPlacementSafety", true, "");
+        public static final StringListConfig SOUND_GAINS = new StringListConfig("soundGains", ImmutableList.of());
+        public static final GenericButtonConfig SOUND_CONTROLLER_MENU = new GenericButtonConfig(
+                "soundControllerMenu", "Open", button -> {
+                    Minecraft.getMinecraft().displayGuiScreen(new SoundControllerScreen());
+                    return true;
+                }, "kisdetweaks.config.comment.soundcontrollermenu");
         public static final HotkeyedBooleanConfig ADDITIONAL_BLOCK_BREAKING_COOLDOWN = new HotkeyedBooleanConfig("additionalBlockBreakingCooldown", false,"");
         public static final IntegerConfig ADDITIONAL_DELAY = new IntegerConfig("additionalDelay", 2, 0, 20);
         public static final HotkeyedBooleanConfig AUTO_CLEAR_GHOST_BLOCK = new HotkeyedBooleanConfig("autoClearGhostBlock", false, "");
@@ -71,7 +79,9 @@ public class Configs {
                 INFINITE_SAVED_HOTBARS_ENABLED,
                 LITEMATICA_SHULKER_PICK_ENABLED,
                 PISTORDER_ENABLED,
+                SOUND_CONTROLLER_ENABLED,
                 PORTAL_PLACEMENT_SAFETY,
+                SOUND_GAINS,
                 ADDITIONAL_BLOCK_BREAKING_COOLDOWN,
                 ADDITIONAL_DELAY,
                 AUTO_CLEAR_GHOST_BLOCK,
@@ -101,6 +111,7 @@ public class Configs {
                 INFINITE_SAVED_HOTBARS_ENABLED,
                 LITEMATICA_SHULKER_PICK_ENABLED,
                 PISTORDER_ENABLED,
+                SOUND_CONTROLLER_ENABLED,
                 PORTAL_PLACEMENT_SAFETY,
                 ADDITIONAL_BLOCK_BREAKING_COOLDOWN,
                 AUTO_CLEAR_GHOST_BLOCK,

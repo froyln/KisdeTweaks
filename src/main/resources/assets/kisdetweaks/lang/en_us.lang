@@ -146,3 +146,7 @@ kisdetweaks.config.comment.litematicashulkerpickenabled=Pick a carried shulker c
 kisdetweaks.config.name.pistorderenabled=Pistorder Preview
 kisdetweaks.config.comment.pistorderenabled=Show piston movement previews on empty-hand right-click.
 kisdetweaks.hotkeys.name.clearpistorder=Clear Pistorder Displays
+kisdetweaks.config.name.soundcontrollerenabled=Per-Sound Volume Rules
+kisdetweaks.config.comment.soundcontrollerenabled=Apply per-sound volume levels.
+kisdetweaks.config.name.soundcontrollermenu=Sound Volume Menu
+kisdetweaks.config.comment.soundcontrollermenu=Open the searchable list of registered sounds and adjust each volume.
