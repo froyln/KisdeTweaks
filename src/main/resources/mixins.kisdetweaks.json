@@ -50,6 +50,7 @@
     "Tweaks.calc.MixinGuiChat",
     "Tweaks.commandCompletion.MixinGuiChat",
     "Tweaks.entityCulling.MixinRenderItemFrame",
+    "Tweaks.infiniteHotbars.MixinGuiContainerCreative",
     "Tweaks.fastChest.BlockChestMixin",
     "Tweaks.fastChest.BlockEnderChestMixin",
     "Tweaks.fastChest.BlockModelShapesMixin",
