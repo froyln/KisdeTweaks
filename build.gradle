@@ -104,6 +104,11 @@ litemod {
 }
 
 processResources {
+    dependsOn compileJava
+    from("$buildDir/tmp/compileJava") {
+        include 'mixins.kisdetweaks.refmap.json'
+    }
+
     // this will ensure that this task is redone when the versions change.
     inputs.property "mod_version", project.config.mod_version
     inputs.property "minecraft_version", project.config.minecraft_version

@@ -5,6 +5,7 @@ import com.google.common.collect.ImmutableList;
 import fi.dy.masa.malilib.config.category.BaseConfigOptionCategory;
 import fi.dy.masa.malilib.config.category.ConfigOptionCategory;
 import fi.dy.masa.malilib.config.option.*;
+import fi.dy.masa.malilib.config.option.GenericButtonConfig;
 import fi.dy.masa.malilib.config.option.list.BlackWhiteListConfig;
 import fi.dy.masa.malilib.config.option.list.BlockListConfig;
 import fi.dy.masa.malilib.config.option.list.ItemListConfig;
@@ -15,12 +16,15 @@ import fi.dy.masa.malilib.util.game.BlockUtils;
 import fi.dy.masa.malilib.util.game.ItemUtils;
 import fi.dy.masa.malilib.util.restriction.UsageRestriction;
 import net.minecraft.block.Block;
+import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import xyz.kisde.kisdetweaks.Reference;
 import xyz.kisde.kisdetweaks.util.autoInventoryProcess.AutoDropContainerType;
+import xyz.kisde.kisdetweaks.config.option.EntityListConfig;
+import net.minecraft.client.Minecraft;
 
 import java.sql.Ref;
 import java.util.List;
@@ -40,7 +44,7 @@ public class Configs {
         public static final HotkeyedBooleanConfig AUTO_REFRESH_INVENTORY = new HotkeyedBooleanConfig("autoRefreshInventory", false, "");
         public static final IntegerConfig AUTO_REFRESH_INVENTORY_INTERVAL = new IntegerConfig("autoRefreshInventoryInterval", 100, 1, 1000);
         public static final HotkeyedBooleanConfig AUTO_DROP_INVENTORY = new HotkeyedBooleanConfig("autoDropInventory", false, "");
-        public static final IntegerConfig AUTO_DROP_INVENTORY_INTERVAL = new IntegerConfig("autoDropInventory", 100, 1, 12000);
+        public static final IntegerConfig AUTO_DROP_INVENTORY_INTERVAL = new IntegerConfig("autoDropInventoryInterval", 100, 1, 12000);
 
         public static final IntegerConfig BACKGROUND_FPS_LIMIT = new IntegerConfig("backgroundFPSLimit", -1, -1, 999);
         public static final IntegerConfig CLIENT_TIME = new IntegerConfig("clientTime", 6000, 0, 24000);

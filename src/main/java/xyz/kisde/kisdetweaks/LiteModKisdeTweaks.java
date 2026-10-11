@@ -8,6 +8,7 @@ import com.mumfrey.liteloader.Tickable;
 import com.mumfrey.liteloader.modconfig.ConfigPanel;
 import fi.dy.masa.malilib.registry.Registry;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.multiplayer.ServerData;
 import net.minecraft.network.INetHandler;
 import net.minecraft.network.play.server.SPacketJoinGame;
@@ -106,4 +107,5 @@ public class LiteModKisdeTweaks implements LiteMod, Configurable, Tickable, Join
     public void onJoinGame(INetHandler netHandler, SPacketJoinGame joinGamePacket, ServerData serverData, RealmsServer realmsServer) {
         RawInput.getMouse();
     }
+
 }
