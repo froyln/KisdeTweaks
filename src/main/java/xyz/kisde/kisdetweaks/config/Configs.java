@@ -36,6 +36,7 @@ public class Configs {
     public static class Generic {
         public static final HotkeyedBooleanConfig CALCULATOR_ENABLED = new HotkeyedBooleanConfig("calculatorEnabled", true, "");
         public static final HotkeyedBooleanConfig COMMAND_COMPLETION_ENABLED = new HotkeyedBooleanConfig("commandCompletionEnabled", true, "");
+        public static final HotkeyedBooleanConfig BETTER_BOOKS_ENABLED = new HotkeyedBooleanConfig("betterBooksEnabled", true, "");
         public static final HotkeyedBooleanConfig INFINITE_SAVED_HOTBARS_ENABLED = new HotkeyedBooleanConfig("infiniteSavedHotbarsEnabled", true, "");
         public static final HotkeyedBooleanConfig LITEMATICA_SHULKER_PICK_ENABLED = new HotkeyedBooleanConfig("litematicaShulkerPickEnabled", true, "");
         public static final HotkeyedBooleanConfig PISTORDER_ENABLED = new HotkeyedBooleanConfig("pistorderEnabled", true, "");
@@ -78,6 +79,7 @@ public class Configs {
         public static final ImmutableList<ConfigOption<?>> OPTIONS = ImmutableList.of(
                 CALCULATOR_ENABLED,
                 COMMAND_COMPLETION_ENABLED,
+                BETTER_BOOKS_ENABLED,
                 INFINITE_SAVED_HOTBARS_ENABLED,
                 LITEMATICA_SHULKER_PICK_ENABLED,
                 PISTORDER_ENABLED,
@@ -112,6 +114,7 @@ public class Configs {
         public static final List<Hotkey> OPTIONS_HOTKEY = ImmutableList.of(
                 CALCULATOR_ENABLED,
                 COMMAND_COMPLETION_ENABLED,
+                BETTER_BOOKS_ENABLED,
                 INFINITE_SAVED_HOTBARS_ENABLED,
                 LITEMATICA_SHULKER_PICK_ENABLED,
                 PISTORDER_ENABLED,

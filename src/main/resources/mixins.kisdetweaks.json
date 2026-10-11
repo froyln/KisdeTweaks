@@ -46,6 +46,7 @@
     "Tweaks.autoFish.MixinNetHandlerPlayClient",
     "Tweaks.autoRespawn.MixinNetHandlerPlayClient",
     "Tweaks.backgroundFPSLimit.MixinMinecraft",
+    "Tweaks.betterBooks.MixinGuiScreenBook",
     "Tweaks.betterF3nCycle.MixinMinecraft",
     "Tweaks.clientTimeOverride.MixinWorldInfo",
     "Tweaks.creativeNoClip.MixinEntityPlayer",

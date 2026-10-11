@@ -143,6 +143,8 @@ kisdetweaks.config.name.calculatorenabled=Local /calc Command
 kisdetweaks.config.comment.calculatorenabled=Evaluate /calc expressions locally without sending them to a server.
 kisdetweaks.config.name.commandcompletionenabled=Command Completion Popup
 kisdetweaks.config.comment.commandcompletionenabled=Show the enhanced command suggestion popup in chat.
+kisdetweaks.config.name.betterbooksenabled=Better Books
+kisdetweaks.config.comment.betterbooksenabled=Edit books with a caret, arrows, Shift selection, Home/End, Delete, and copy/cut/paste. Click to place the caret.
 kisdetweaks.config.name.infinitesavedhotbarsenabled=Expandable Saved Hotbars
 kisdetweaks.config.comment.infinitesavedhotbarsenabled=Show KisdeTweaks saved rows in the Creative Hotbar tab.
 kisdetweaks.config.name.litematicashulkerpickenabled=Litematica Shulker Pick
@@ -155,6 +157,7 @@ kisdetweaks.config.comment.soundcontrollerenabled=Apply per-sound volume levels.
 kisdetweaks.config.name.soundcontrollermenu=Sound Volume Menu
 kisdetweaks.config.comment.soundcontrollermenu=Open the searchable list of registered sounds and adjust each volume.
 
+kisdetweaks.book.clipboard=Book page clipboard shortcuts: Ctrl+A, Ctrl+C, Ctrl+X, Ctrl+V
 
 kisdetweaks.config.tab.fixes=Fixes
 kisdetweaks.config.name.hotbarhotkeysfix=Hotbar Hotkeys Fix
