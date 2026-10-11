@@ -64,7 +64,6 @@
     "Tweaks.maxChatSize.GuiNewChatMixin",
     "Tweaks.miningGhostBlockFix.MixinPlayerControllerMP",
     "Tweaks.newNoteBlock.MixinBlockNote",
-    "Tweaks.nightVision.MixinEntityLivingBase",
     "Tweaks.nightVision.MixinEntityRenderer",
     "Tweaks.perimeterWalHelper.MixinPlayerControllerMP",
     "Tweaks.perventDigBlocksBelow.MixinPlayerControllerMP",
