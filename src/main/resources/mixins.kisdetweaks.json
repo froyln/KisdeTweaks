@@ -47,6 +47,7 @@
     "Tweaks.clientTimeOverride.MixinWorldInfo",
     "Tweaks.creativeNoClip.MixinEntityPlayer",
     "Tweaks.creativeNoClip.MixinEntityRenderer",
+    "Tweaks.calc.MixinGuiChat",
     "Tweaks.entityCulling.MixinRenderItemFrame",
     "Tweaks.fastChest.BlockChestMixin",
     "Tweaks.fastChest.BlockEnderChestMixin",
