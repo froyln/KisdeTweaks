@@ -68,6 +68,7 @@ public class ConfigScreen {
         ArrayList<ConfigInfo> list = new ArrayList<>(Configs.Generic.OPTIONS);
         list.remove(Configs.Generic.SOUND_GAINS);
         list.add(Configs.Generic.SOUND_CONTROLLER_MENU);
+        list.add(Configs.Generic.DURABILITY_HUD_POSITION);
 
         ConfigUtils.sortConfigsByDisplayName(list);
 

@@ -11,6 +11,7 @@ import fi.dy.masa.malilib.config.option.list.BlockListConfig;
 import fi.dy.masa.malilib.config.option.list.ItemListConfig;
 import fi.dy.masa.malilib.config.option.list.StringListConfig;
 import fi.dy.masa.malilib.config.value.BlackWhiteList;
+import fi.dy.masa.malilib.config.value.BaseOptionListConfigValue;
 import fi.dy.masa.malilib.input.Hotkey;
 import fi.dy.masa.malilib.util.game.BlockUtils;
 import fi.dy.masa.malilib.util.game.ItemUtils;
@@ -34,6 +35,22 @@ public class Configs {
 
     //Generic and misc options goes here
     public static class Generic {
+        public static final BooleanConfig DURABILITY_SHOW_EMPTY = new BooleanConfig("durabilityShowEmpty", true);
+        public static final IntegerConfig DURABILITY_HUD_X_OFFSET = new IntegerConfig("durabilityHudXOffset", 12, 0, 4096);
+        public static final IntegerConfig DURABILITY_HUD_Y_OFFSET = new IntegerConfig("durabilityHudYOffset", 0, 0, 4096);
+        public static final GenericButtonConfig DURABILITY_HUD_POSITION = new GenericButtonConfig(
+                "durabilityHudPosition", "Move HUD", button -> {
+                    Minecraft mc = Minecraft.getMinecraft();
+                    mc.displayGuiScreen(new xyz.kisde.kisdetweaks.gui.DurabilityHudPositionScreen(mc.currentScreen));
+                    return true;
+                }, "kisdetweaks.config.comment.durabilityhudposition");
+        public static final BooleanConfig DURABILITY_PERCENTAGES = new BooleanConfig("durabilityPercentages", false);
+        public static final IntegerConfig DURABILITY_SHOW_DAMAGE_AT_PERCENT = new IntegerConfig("durabilityShowDamageAtPercent", 80, 0, 100);
+        public static final IntegerConfig DURABILITY_HIDE_OVER_PERCENT = new IntegerConfig("durabilityHideOverPercent", 100, 0, 100);
+        public static final IntegerConfig DURABILITY_WARNING_AMOUNT = new IntegerConfig("durabilityWarningAmount", 100, 1, 1500);
+        public static final IntegerConfig DURABILITY_WARNING_PERCENT = new IntegerConfig("durabilityWarningPercent", 10, 1, 100);
+        public static final OptionListConfig<DurabilityHudCorner> DURABILITY_HUD_CORNER = new OptionListConfig<>("durabilityHudCorner", DurabilityHudCorner.BOTTOM_RIGHT, DurabilityHudCorner.VALUES);
+        public static final OptionListConfig<DurabilityWarningMode> DURABILITY_WARNING_MODE = new OptionListConfig<>("durabilityWarningMode", DurabilityWarningMode.SOUND, DurabilityWarningMode.VALUES);
         public static final HotkeyedBooleanConfig CALCULATOR_ENABLED = new HotkeyedBooleanConfig("calculatorEnabled", true, "");
         public static final HotkeyedBooleanConfig COMMAND_COMPLETION_ENABLED = new HotkeyedBooleanConfig("commandCompletionEnabled", true, "");
         public static final HotkeyedBooleanConfig BETTER_BOOKS_ENABLED = new HotkeyedBooleanConfig("betterBooksEnabled", true, "");
@@ -77,6 +94,16 @@ public class Configs {
         public static final BlackWhiteListConfig<Item> ITEM_DROP_LIST = new BlackWhiteListConfig<>("itemDropList", BlackWhiteList.itemNames((UsageRestriction.ListType.WHITELIST),ImmutableList.of(), ImmutableList.of("minecraft:stone")));
 
         public static final ImmutableList<ConfigOption<?>> OPTIONS = ImmutableList.of(
+                DURABILITY_SHOW_EMPTY,
+                DURABILITY_HUD_X_OFFSET,
+                DURABILITY_HUD_Y_OFFSET,
+                DURABILITY_PERCENTAGES,
+                DURABILITY_SHOW_DAMAGE_AT_PERCENT,
+                DURABILITY_HIDE_OVER_PERCENT,
+                DURABILITY_WARNING_AMOUNT,
+                DURABILITY_WARNING_PERCENT,
+                DURABILITY_HUD_CORNER,
+                DURABILITY_WARNING_MODE,
                 CALCULATOR_ENABLED,
                 COMMAND_COMPLETION_ENABLED,
                 BETTER_BOOKS_ENABLED,
@@ -127,6 +154,24 @@ public class Configs {
                 AUTO_FILL_CONTAINER,
                 AUTO_REFRESH_INVENTORY
         );
+    }
+
+    public static class DurabilityHudCorner extends BaseOptionListConfigValue {
+        public static final DurabilityHudCorner TOP_LEFT = new DurabilityHudCorner("top_left");
+        public static final DurabilityHudCorner TOP_RIGHT = new DurabilityHudCorner("top_right");
+        public static final DurabilityHudCorner BOTTOM_LEFT = new DurabilityHudCorner("bottom_left");
+        public static final DurabilityHudCorner BOTTOM_RIGHT = new DurabilityHudCorner("bottom_right");
+        public static final ImmutableList<DurabilityHudCorner> VALUES = ImmutableList.of(TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT);
+        private DurabilityHudCorner(String name) { super(name, "kisdetweaks.label.durability.corner." + name); }
+    }
+
+    public static class DurabilityWarningMode extends BaseOptionListConfigValue {
+        public static final DurabilityWarningMode NONE = new DurabilityWarningMode("none");
+        public static final DurabilityWarningMode SOUND = new DurabilityWarningMode("sound");
+        public static final DurabilityWarningMode VISUAL = new DurabilityWarningMode("visual");
+        public static final DurabilityWarningMode BOTH = new DurabilityWarningMode("both");
+        public static final ImmutableList<DurabilityWarningMode> VALUES = ImmutableList.of(NONE, SOUND, VISUAL, BOTH);
+        private DurabilityWarningMode(String name) { super(name, "kisdetweaks.label.durability.warning." + name); }
     }
 
     public static class Fixes {
