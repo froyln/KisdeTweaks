@@ -49,6 +49,7 @@
     "Tweaks.betterBooks.MixinGuiScreenBook",
     "Tweaks.betterF3nCycle.MixinMinecraft",
     "Tweaks.clientTimeOverride.MixinWorldInfo",
+    "Tweaks.compactScoreboard.MixinGuiIngame",
     "Tweaks.creativeNoClip.MixinEntityPlayer",
     "Tweaks.creativeNoClip.MixinEntityRenderer",
     "Tweaks.durabilityViewer.MixinGuiIngame",

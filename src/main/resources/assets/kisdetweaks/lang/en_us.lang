@@ -199,3 +199,8 @@ kisdetweaks.config.comment.hotbarhotkeysfix=Prioritize bound hotbar keys while h
 
 kisdetweaks.config.name.optifineredstonecolors=OptiFine Redstone Colors
 kisdetweaks.config.comment.optifineredstonecolors=Use the active resource pack's 16x1 OptiFine/MCPatcher redstone palette for dust and its particles. Other OptiFine features are not included.
+
+kisdetweaks.feature_toggle.name.compactscoreboard=CompactScoreboard
+kisdetweaks.feature_toggle.comment.compactscoreboard=Shorten sidebar scores with K, M and B, truncating to two decimal places.
+kisdetweaks.hotkeys.name.showfullscoreboardnumbers=Show Full Scoreboard Numbers
+kisdetweaks.hotkeys.comment.showfullscoreboardnumbers=Hold to temporarily show full sidebar scores when CompactScoreboard is enabled.

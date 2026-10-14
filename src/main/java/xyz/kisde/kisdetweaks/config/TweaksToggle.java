@@ -27,6 +27,7 @@ public enum TweaksToggle implements ConfigInfo {
     AUTO_RESPAWN("autoRespawn", false),
     BETTER_F3N_CYCLE("betterF3nCycle", false),
     CLIENT_TIME_OVERRIDE("clientTimeOverride", false),
+    COMPACT_SCOREBOARD("compactScoreboard", false),
     //TODO CREATIVE_FLY_NO_DRAG("creativeFlyNoDrag", false),
     CREATIVE_NO_CLIP("creativeNoClip", false),
     DURABILITY_VIEWER("durabilityViewer", false),

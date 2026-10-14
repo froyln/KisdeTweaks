@@ -27,3 +27,7 @@ Every standalone feature above has an enable toggle in the KisdeTweaks MaLiLib c
 - Sound presets, preview playback, and regions
 
 Source compilation does not prove runtime Mixin compatibility; features are not fully verified until checked in Minecraft 1.12.2.
+
+### CompactScoreboard
+
+Enable **CompactScoreboard** in Tweaks to shorten sidebar scores with K, M, and B. Values are truncated to at most two decimal places, with trailing zeros removed: `1,250 → 1.25K`, `1,500,050 → 1.5M`, and `1,555,555 → 1.55M`. Smaller values stay unchanged. Assign **Show Full Scoreboard Numbers** in Hotkeys and hold that key to temporarily show the original numbers. The key is unassigned by default.

@@ -7,6 +7,7 @@ import fi.dy.masa.malilib.input.KeyBindSettings;
 import java.util.List;
 
 public class Hotkeys {
+    public static final HotkeyConfig SHOW_FULL_SCOREBOARD_NUMBERS = new HotkeyConfig("showFullScoreboardNumbers", "", KeyBindSettings.INGAME_MODIFIER);
     public static final HotkeyConfig CLEAR_GHOST_BLOCK = new HotkeyConfig("clearGhostBlock", "", KeyBindSettings.INGAME_MODIFIER);
     public static final HotkeyConfig CLEAR_GHOST_BLOCK_RC = new HotkeyConfig("clearGhostBlockRightClick", "", KeyBindSettings.INGAME_MODIFIER);
 
@@ -19,6 +20,7 @@ public class Hotkeys {
     public static final HotkeyConfig TOGGLE_MAIN_HAND = new HotkeyConfig("toggleMainHand", "", KeyBindSettings.INGAME_MODIFIER);
 
     public static final List<HotkeyConfig> HOTKEY_LIST = ImmutableList.of(
+            SHOW_FULL_SCOREBOARD_NUMBERS,
             CLEAR_GHOST_BLOCK,
             CLEAR_GHOST_BLOCK_RC,
             DROP_INVENTORY,
