@@ -31,3 +31,7 @@ Source compilation does not prove runtime Mixin compatibility; features are not 
 ### CompactScoreboard
 
 Enable **CompactScoreboard** in Tweaks to shorten sidebar scores with K, M, and B. Values are truncated to at most two decimal places, with trailing zeros removed: `1,250 → 1.25K`, `1,500,050 → 1.5M`, and `1,555,555 → 1.55M`. Smaller values stay unchanged. Assign **Show Full Scoreboard Numbers** in Hotkeys and hold that key to temporarily show the original numbers. The key is unassigned by default.
+
+### Fast Observer Placement Fix
+
+Enable **Fixes → Fast Observer Placement Fix** on a Carpet server with `accurateBlockPlacement` enabled. During Tweakeroo Fast Block Placement, subsequent observers keep the first successful observer’s facing until you release right-click, including when building upward across eye level. Other blocks retain their normal placement behavior. This fix is off by default and requires Tweakeroo; leave it disabled on vanilla servers.

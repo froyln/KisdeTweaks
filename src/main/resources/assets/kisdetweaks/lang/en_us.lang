@@ -204,3 +204,6 @@ kisdetweaks.feature_toggle.name.compactscoreboard=CompactScoreboard
 kisdetweaks.feature_toggle.comment.compactscoreboard=Shorten sidebar scores with K, M and B, truncating to two decimal places.
 kisdetweaks.hotkeys.name.showfullscoreboardnumbers=Show Full Scoreboard Numbers
 kisdetweaks.hotkeys.comment.showfullscoreboardnumbers=Hold to temporarily show full sidebar scores when CompactScoreboard is enabled.
+
+kisdetweaks.config.name.fastobserverplacementfix=Fast Observer Placement Fix
+kisdetweaks.config.comment.fastobserverplacementfix=Keep the first observer facing during Tweakeroo Fast Block Placement. Requires a Carpet server with accurateBlockPlacement enabled. Leave disabled on vanilla servers.
