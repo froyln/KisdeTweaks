@@ -32,9 +32,9 @@ Source compilation does not prove runtime Mixin compatibility; features are not 
 
 Enable **CompactScoreboard** in Tweaks to shorten sidebar scores with K, M, and B. Values are truncated to at most two decimal places, with trailing zeros removed: `1,250 → 1.25K`, `1,500,050 → 1.5M`, and `1,555,555 → 1.55M`. Smaller values stay unchanged. Assign **Show Full Scoreboard Numbers** in Hotkeys and hold that key to temporarily show the original numbers. The key is unassigned by default.
 
-### Fast Observer Placement Fix
+### Fast Placement Orientation Fix
 
-Enable **Fixes → Fast Observer Placement Fix** on a Carpet server with `accurateBlockPlacement` enabled. During Tweakeroo Fast Block Placement, subsequent observers keep the first successful observer’s facing until you release right-click, including when building upward across eye level. Other blocks retain their normal placement behavior. This fix is off by default and requires Tweakeroo; leave it disabled on vanilla servers.
+Enable **Fixes → Fast Placement Orientation Fix** on a Carpet server with `accurateBlockPlacement` enabled. Tweakeroo Fast Block Placement keeps the first successful placement’s orientation until you release right-click or change block types. This covers observers, pistons, sticky pistons, dispensers, droppers, glazed terracotta, repeaters, comparators, trapdoors, stairs, fence gates and pumpkins using Carpet’s supported placement protocol. Encoded properties such as stair/trapdoor half and repeater delay are retained. Doors, rails, logs, chests (which apply additional server rotation) and other blocks outside this fix keep their existing behavior. The setting retains the previous observer fix’s saved value and is off by default.
 
 ### Inventory Offhand Swap Fix
 
