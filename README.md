@@ -34,7 +34,10 @@ KisdeTweaks extends the LiteTweaker 1.12.2 project and uses MaLiLib for configur
 
 ## Installation
 
-No release artifact is available yet.
+1. Download the `.litemod` file from the [latest release](https://github.com/froyln/KisdeTweaks/releases/latest).
+2. Install LiteLoader for Minecraft 1.12.2 and a compatible MaLiLib version.
+3. Put KisdeTweaks and MaLiLib in your instance’s `minecraft/mods/1.12.2/` folder. Replace older KisdeTweaks files to avoid duplicates.
+4. Restart Minecraft. Press **End** to open the configuration menu.
 
 ## Building from Source
 
