@@ -207,3 +207,6 @@ kisdetweaks.hotkeys.comment.showfullscoreboardnumbers=Hold to temporarily show f
 
 kisdetweaks.config.name.fastobserverplacementfix=Fast Observer Placement Fix
 kisdetweaks.config.comment.fastobserverplacementfix=Keep the first observer facing during Tweakeroo Fast Block Placement. Requires a Carpet server with accurateBlockPlacement enabled. Leave disabled on vanilla servers.
+
+kisdetweaks.config.name.inventoryoffhandswapfix=Inventory Offhand Swap Fix
+kisdetweaks.config.comment.inventoryoffhandswapfix=Use your Minecraft Swap Item In Hands key over an item in the player inventory to move it to the offhand. Supports mouse bindings; hotbar keys take priority when Hotbar Hotkeys Fix is enabled.

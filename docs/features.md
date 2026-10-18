@@ -35,3 +35,7 @@ Enable **CompactScoreboard** in Tweaks to shorten sidebar scores with K, M, and 
 ### Fast Observer Placement Fix
 
 Enable **Fixes → Fast Observer Placement Fix** on a Carpet server with `accurateBlockPlacement` enabled. During Tweakeroo Fast Block Placement, subsequent observers keep the first successful observer’s facing until you release right-click, including when building upward across eye level. Other blocks retain their normal placement behavior. This fix is off by default and requires Tweakeroo; leave it disabled on vanilla servers.
+
+### Inventory Offhand Swap Fix
+
+Enabled by default under **Fixes**. In the player inventory, hover over a slot and press your Minecraft **Swap Item In Hands** binding to move the item to the offhand. Keyboard and mouse bindings are supported. The cursor must be empty; containers and the creative inventory are excluded. With **Hotbar Hotkeys Fix** enabled, a conflicting hotbar binding takes priority.
