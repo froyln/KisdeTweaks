@@ -51,6 +51,7 @@
     "Tweaks.betterF3nCycle.MixinMinecraft",
     "Tweaks.clientTimeOverride.MixinWorldInfo",
     "Tweaks.compactScoreboard.MixinGuiIngame",
+    "Tweaks.copySeedToClipboard.MixinNetHandlerPlayClient",
     "Tweaks.creativeNoClip.MixinEntityPlayer",
     "Tweaks.creativeNoClip.MixinEntityRenderer",
     "Tweaks.durabilityViewer.MixinGuiIngame",
