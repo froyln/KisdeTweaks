@@ -52,6 +52,10 @@ public class Configs {
         public static final OptionListConfig<DurabilityHudCorner> DURABILITY_HUD_CORNER = new OptionListConfig<>("durabilityHudCorner", DurabilityHudCorner.BOTTOM_RIGHT, DurabilityHudCorner.VALUES);
         public static final OptionListConfig<DurabilityWarningMode> DURABILITY_WARNING_MODE = new OptionListConfig<>("durabilityWarningMode", DurabilityWarningMode.SOUND, DurabilityWarningMode.VALUES);
         public static final HotkeyedBooleanConfig CALCULATOR_ENABLED = new HotkeyedBooleanConfig("calculatorEnabled", true, "");
+        public static final OptionListConfig<CommandCompletionMode> COMMAND_COMPLETION_MODE = new OptionListConfig<>("commandCompletionMode", CommandCompletionMode.LOOSE, CommandCompletionMode.VALUES);
+        public static final BooleanConfig COMMAND_COMPLETION_CASE_SENSITIVE = new BooleanConfig("commandCompletionCaseSensitive", false);
+        public static final StringConfig COMMAND_COMPLETION_HIDDEN_PREFIX = new StringConfig("commandCompletionHiddenPrefix", "");
+        public static final BooleanConfig COMMAND_COMPLETION_NBT = new BooleanConfig("commandCompletionNbt", true);
         public static final HotkeyedBooleanConfig COMMAND_COMPLETION_ENABLED = new HotkeyedBooleanConfig("commandCompletionEnabled", true, "");
         public static final HotkeyedBooleanConfig BETTER_BOOKS_ENABLED = new HotkeyedBooleanConfig("betterBooksEnabled", true, "");
         public static final HotkeyedBooleanConfig INFINITE_SAVED_HOTBARS_ENABLED = new HotkeyedBooleanConfig("infiniteSavedHotbarsEnabled", true, "");
@@ -106,6 +110,7 @@ public class Configs {
                 DURABILITY_WARNING_MODE,
                 CALCULATOR_ENABLED,
                 COMMAND_COMPLETION_ENABLED,
+                COMMAND_COMPLETION_MODE, COMMAND_COMPLETION_CASE_SENSITIVE, COMMAND_COMPLETION_HIDDEN_PREFIX, COMMAND_COMPLETION_NBT,
                 BETTER_BOOKS_ENABLED,
                 INFINITE_SAVED_HOTBARS_ENABLED,
                 LITEMATICA_SHULKER_PICK_ENABLED,
@@ -154,6 +159,19 @@ public class Configs {
                 AUTO_FILL_CONTAINER,
                 AUTO_REFRESH_INVENTORY
         );
+    }
+
+    public static class CommandCompletionMode extends BaseOptionListConfigValue {
+        public static final CommandCompletionMode STRICT = new CommandCompletionMode("strict", xyz.kisde.kisdetweaks.util.SuggestionMatching.Mode.STRICT);
+        public static final CommandCompletionMode SLIGHTLY_LOOSE = new CommandCompletionMode("slightly_loose", xyz.kisde.kisdetweaks.util.SuggestionMatching.Mode.SLIGHTLY_LOOSE);
+        public static final CommandCompletionMode LOOSE = new CommandCompletionMode("loose", xyz.kisde.kisdetweaks.util.SuggestionMatching.Mode.LOOSE);
+        public static final CommandCompletionMode VERY_LOOSE = new CommandCompletionMode("very_loose", xyz.kisde.kisdetweaks.util.SuggestionMatching.Mode.VERY_LOOSE);
+        public static final ImmutableList<CommandCompletionMode> VALUES = ImmutableList.of(STRICT, SLIGHTLY_LOOSE, LOOSE, VERY_LOOSE);
+        public final xyz.kisde.kisdetweaks.util.SuggestionMatching.Mode mode;
+        private CommandCompletionMode(String name, xyz.kisde.kisdetweaks.util.SuggestionMatching.Mode mode) {
+            super(name, "kisdetweaks.label.commandcompletion." + name);
+            this.mode = mode;
+        }
     }
 
     public static class DurabilityHudCorner extends BaseOptionListConfigValue {

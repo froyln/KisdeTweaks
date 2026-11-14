@@ -212,3 +212,16 @@ kisdetweaks.config.comment.fastobserverplacementfix=Keep the first placement ori
 
 kisdetweaks.config.name.inventoryoffhandswapfix=Inventory Offhand Swap Fix
 kisdetweaks.config.comment.inventoryoffhandswapfix=Use your Minecraft Swap Item In Hands key over an item in the player inventory to move it to the offhand. Supports mouse bindings; hotbar keys take priority when Hotbar Hotkeys Fix is enabled.
+
+kisdetweaks.config.name.commandcompletionmode=Command Suggestion Matching
+kisdetweaks.config.comment.commandcompletionmode=Strict: prefix/word boundary. Slightly Loose: substring. Loose: ordered words separated by underscores. Very Loose: ordered letters. Best matches appear first; broader modes request all candidates for the current argument from the server.
+kisdetweaks.config.name.commandcompletioncasesensitive=Case Sensitive Command Suggestions
+kisdetweaks.config.comment.commandcompletioncasesensitive=Match command suggestions using exact letter case. NBT names are inserted with their original case.
+kisdetweaks.config.name.commandcompletionhiddenprefix=Hidden Suggestion Prefix
+kisdetweaks.config.comment.commandcompletionhiddenprefix=Hide suggestions whose name or any path segment starts with this prefix. Leave empty to show all candidates.
+kisdetweaks.config.name.commandcompletionnbt=NBT Command Suggestions
+kisdetweaks.config.comment.commandcompletionnbt=Suggest vanilla 1.12.2 NBT keys, nested compounds/lists and value types in supported commands. Local hints do not change saved items or world data.
+kisdetweaks.label.commandcompletion.strict=Strict
+kisdetweaks.label.commandcompletion.slightly_loose=Slightly Loose
+kisdetweaks.label.commandcompletion.loose=Loose
+kisdetweaks.label.commandcompletion.very_loose=Very Loose

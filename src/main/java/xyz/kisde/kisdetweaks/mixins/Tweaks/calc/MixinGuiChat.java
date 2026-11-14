@@ -18,6 +18,9 @@ public abstract class MixinGuiChat {
                 || (!message.equals("/calc") && !message.startsWith("/calc "))) return;
         ci.cancel();
         Minecraft mc = Minecraft.getMinecraft();
+        if (addToChat) {
+            mc.ingameGUI.getChatGUI().addToSentMessages(message);
+        }
         String expression = message.length() > 5 ? message.substring(6).trim() : "";
         if (expression.isEmpty()) {
             mc.ingameGUI.getChatGUI().printChatMessage(new TextComponentString("Usage: /calc <expression>"));

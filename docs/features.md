@@ -15,7 +15,7 @@
 - **Litematica shulker pick:** if Litematica's ordinary requested-stack pick fails, KisdeTweaks searches carried shulker boxes and selects an existing hotbar box or swaps an inventory box into the selected hotbar slot using a normal server-validated inventory click. Litematica remains optional.
 
 - **Better Books:** adds a visible caret, arrow navigation, Shift+Arrow selection, Ctrl+Left/Right word navigation, Home/End, Delete, and selection-aware copy/cut/paste. Click text to place the caret; Shift+Click extends selection. Editing keeps vanilla page limits and signing behavior.
-- **Command completion:** command suggestions open automatically while typing a command. Arrow keys navigate suggestions; history navigation remains available outside suggestion selection.
+- **Command completion:** command suggestions open automatically while typing a command. Tab and Shift+Tab cycle through all suggestions, scrolling the popup as needed. Up/Down recall chat history; Shift+Up/Down select suggestions. Local `/calc` commands, including invalid calculations, are saved in chat history.
 - **Fake Night Vision:** rendering-only brightness avoids advertising nonexistent potion effects to VoxelMap and other potion consumers.
 - **Durability viewer:** opt-in HUD shows durability for the held items and armor, color-coded by remaining durability, and the number of empty main-inventory slots. Nearly new tools show damage taken instead of a large remaining-durability value.
 
@@ -40,3 +40,17 @@ Enable **Fixes → Fast Placement Orientation Fix** on a Carpet server with `acc
 ### Inventory Offhand Swap Fix
 
 Enabled by default under **Fixes**. In the player inventory, hover over a slot and press your Minecraft **Swap Item In Hands** binding to move the item to the offhand. Keyboard and mouse bindings are supported. The cursor must be empty; containers and the creative inventory are excluded. With **Hotbar Hotkeys Fix** enabled, a conflicting hotbar binding takes priority.
+
+### Command suggestion matching and NBT
+
+**Command Completion Popup** includes matching and ranking inspired by [Suggestion Tweaker](https://modrinth.com/mod/suggestion-tweaker), plus tag/type hints inspired by [NBT Autocomplete](https://modrinth.com/mod/nbt-autocomplete). These features are implemented for Minecraft 1.12.2/LiteLoader; neither mod is required.
+
+Under **Generic**, **Command Suggestion Matching** chooses Strict (prefix and word boundaries), Slightly Loose (substring), Loose (ordered words separated by underscores, the default), or Very Loose (ordered letters). Closer matches appear first, then alphabetical order. **Case Sensitive Command Suggestions** defaults off; **Hidden Suggestion Prefix** defaults empty and can hide names or path segments starting with a chosen prefix. Broader modes request candidates for the current argument and filter locally. Servers still control permissions and which candidates they return; custom server completers may return fewer candidates for an empty argument.
+
+**NBT Command Suggestions** defaults on. After an opening `{` in a supported NBT argument, the popup shows vanilla tag names and types. It follows nested compounds and lists, skips keys already present in that compound, and preserves existing values and text after the cursor when completing a key. Tab after a colon offers an empty compound/list/string or a correctly typed numeric starting value. For example:
+
+- `/give @p diamond_sword 1 0 {` suggests item tags; `{display:{` suggests `Name` and `Lore`.
+- `/summon zombie ~ ~ ~ {` suggests entity tags; `{HandItems:[{` suggests item-stack fields.
+- `/setblock ~ ~ ~ chest 0 replace {` suggests chest tags; `{Items:[{tag:{` suggests item tags.
+
+The supported commands are `/give`, `/clear`, `/replaceitem`, `/summon`, `/entitydata`, `/testfor`, `/blockdata`, `/setblock`, `/fill`, and `/testforblock`, including their `minecraft:` forms and commands nested in `/execute`. Use the full 1.12.2 argument positions before the NBT (including count/damage or block state/mode where required). Hints use built-in vanilla schemas, not server introspection; unknown/custom tags can still be typed manually. Generic entity/block contexts offer a combined set of common tags. Item, block and entity identifiers narrow the hints where available. Suggestions only edit chat text; they never apply commands or alter saved NBT automatically.
