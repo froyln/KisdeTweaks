@@ -54,3 +54,7 @@ Under **Generic**, **Command Suggestion Matching** chooses Strict (prefix and wo
 - `/setblock ~ ~ ~ chest 0 replace {` suggests chest tags; `{Items:[{tag:{` suggests item tags.
 
 The supported commands are `/give`, `/clear`, `/replaceitem`, `/summon`, `/entitydata`, `/testfor`, `/blockdata`, `/setblock`, `/fill`, and `/testforblock`, including their `minecraft:` forms and commands nested in `/execute`. Use the full 1.12.2 argument positions before the NBT (including count/damage or block state/mode where required). Hints use built-in vanilla schemas, not server introspection; unknown/custom tags can still be typed manually. Generic entity/block contexts offer a combined set of common tags. Item, block and entity identifiers narrow the hints where available. Suggestions only edit chat text; they never apply commands or alter saved NBT automatically.
+
+### MaLiLib Menu Hotkey Fix
+
+Enabled by default under **Fixes**. When a MaLiLib menu is open, global hotkeys cannot replace it with another MaLiLib menu. Open menus normally through their buttons, or close the current menu before using another menu hotkey.

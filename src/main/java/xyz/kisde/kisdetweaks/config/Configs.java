@@ -193,11 +193,12 @@ public class Configs {
     }
 
     public static class Fixes {
+        public static final BooleanConfig MALILIB_MENU_HOTKEY_FIX = new BooleanConfig("malilibMenuHotkeyFix", true);
         public static final BooleanConfig INVENTORY_OFFHAND_SWAP_FIX = new BooleanConfig("inventoryOffhandSwapFix", true);
         public static final BooleanConfig FAST_OBSERVER_PLACEMENT_FIX = new BooleanConfig("fastObserverPlacementFix", false);
         public static final BooleanConfig HOTBAR_HOTKEYS_FIX = new BooleanConfig("hotbarHotkeysFix", true);
         public static final BooleanConfig OPTIFINE_REDSTONE_COLORS = new BooleanConfig("optifineRedstoneColors", true);
-        public static final ImmutableList<ConfigOption<?>> OPTIONS = ImmutableList.of(INVENTORY_OFFHAND_SWAP_FIX, HOTBAR_HOTKEYS_FIX, OPTIFINE_REDSTONE_COLORS, FAST_OBSERVER_PLACEMENT_FIX);
+        public static final ImmutableList<ConfigOption<?>> OPTIONS = ImmutableList.of(MALILIB_MENU_HOTKEY_FIX, INVENTORY_OFFHAND_SWAP_FIX, HOTBAR_HOTKEYS_FIX, OPTIFINE_REDSTONE_COLORS, FAST_OBSERVER_PLACEMENT_FIX);
     }
 
     public static final int CURRENT_VERSION = 1;

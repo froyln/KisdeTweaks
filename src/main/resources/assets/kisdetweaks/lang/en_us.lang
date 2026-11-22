@@ -225,3 +225,6 @@ kisdetweaks.label.commandcompletion.strict=Strict
 kisdetweaks.label.commandcompletion.slightly_loose=Slightly Loose
 kisdetweaks.label.commandcompletion.loose=Loose
 kisdetweaks.label.commandcompletion.very_loose=Very Loose
+
+kisdetweaks.config.name.malilibmenuhotkeyfix=MaLiLib Menu Hotkey Fix
+kisdetweaks.config.comment.malilibmenuhotkeyfix=Keep the current MaLiLib menu open when a hotkey would replace it with another MaLiLib menu.

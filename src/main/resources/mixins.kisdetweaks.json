@@ -6,6 +6,8 @@
   "minVersion": "0.7",
   "mixins": [
     "Fixes.MixinInputDispatcher",
+    "Fixes.MixinHotkeyMenuCallback",
+    "Fixes.MixinMinecraftMenuHotkeys",
     "Fixes.MixinTweakerooPlacement",
     "Fixes.MixinBlockRedstoneWire",
     "Accessors.BlockAccessor",
